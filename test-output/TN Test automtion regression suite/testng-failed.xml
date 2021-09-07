@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" parallel="tests" name="Failed suite [TN Test automtion regression suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="com.qa.saucedemo.listeners.ExtentReportListener"/>
+  </listeners>
+  <test thread-count="2" parallel="tests" name="ProductsPage Test_FF_80(failed)">
+    <classes>
+      <class name="com.qa.saucedemo.test.ProductPageTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="verifyItemTshirtAdded"/>
+        </methods>
+      </class> <!-- com.qa.saucedemo.test.ProductPageTest -->
+    </classes>
+  </test> <!-- ProductsPage Test_FF_80(failed) -->
+</suite> <!-- Failed suite [TN Test automtion regression suite] -->

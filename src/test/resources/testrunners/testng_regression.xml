@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="TN Test automtion regression suite" parallel="tests"
+	thread-count="2">
+
+	<listeners>
+		<listener
+			class-name="com.qa.saucedemo.listeners.ExtentReportListener" />
+	</listeners>
+
+	<test name="LoginPage Test ">
+		<classes>
+			<class name="com.qa.saucedemo.test.LoginPageTest" />
+		</classes>
+	</test>
+	
+	<test name="ProductsPage Test ">
+		<classes>
+			<class name="com.qa.saucedemo.test.ProductPageTest" />
+		</classes>
+	</test>
+	
+		<test name="The ASSIGNMENT MAIN Test ">
+		<classes>
+			<class name="com.qa.saucedemo.test.MainTest" />
+		</classes>
+	</test>
+	
+
+
+
+
+</suite>
